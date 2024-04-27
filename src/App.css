@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap')
+
+;
+
+body{
+    
+  font-family: "Jost", sans-serif;
+
+} 
+
+
+nav {
+
+ 
+  z-index: 10001 !important;
+}
+
+.gradientBg{
+  background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100% );
+}
+
+.btnPrimary{
+  @apply py-2 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300
+}
+
+.zoom-in-image {
+  overflow: hidden;
+}
+
+.zoom-in-image img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-in-image:hover img {
+  transform: scale(1.2);
+}
